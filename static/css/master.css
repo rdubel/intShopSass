@@ -4,18 +4,22 @@ header {
   text-align: center;
   height: 50em;
 }
-header ul.nav:nth-child(1) {
-  margin-left: 28em;
+header nav {
+  text-align: center;
 }
-header ul.nav:nth-child(1) a {
+header ul.nav:nth-child(2) {
+  margin-left: 52.3em;
+}
+header ul.nav:nth-child(2) a {
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.65);
   font-weight: normal;
 }
-header ul.nav:nth-child(2) {
+header ul.nav:nth-child(3) {
   margin-top: 1.5em;
-  margin-right: 2em;
+  margin-right: 1.3em;
   color: rgba(255, 255, 255, 0.65);
+  font-size: 1.5em;
 }
 header h1 {
   margin: 5em auto 0.5em auto;
@@ -25,18 +29,18 @@ header h1 {
 header h1 span {
   text-transform: capitalize;
 }
-header button {
-  margin-left: 3em;
+header .btn {
+  margin-left: 4.5em;
   background-color: #a28f61;
-}
-header button a {
   text-transform: uppercase;
-  font-size: 1.3em;
-  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
   color: white;
 }
 header span.glyphicon:nth-child(4) {
-  margin-top: 19em;
+  font-size: 1.5em;
+  margin-top: 10em;
   margin-right: 2em;
   color: rgba(255, 255, 255, 0.65);
 }
@@ -48,6 +52,8 @@ main h2 {
   margin: 2em 0 1.5em 0;
 }
 main section {
+  width: 70%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -87,6 +93,7 @@ footer article ul {
 }
 footer article ul li {
   color: rgba(255, 255, 255, 0.65);
+  margin: 0.5em 0;
 }
 footer article ul li i {
   margin-right: 1em;
