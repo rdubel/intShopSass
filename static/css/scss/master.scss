@@ -31,7 +31,8 @@ header {
         margin-left: 3em;
         background-color: $brown-color;
         a {
-            font-size: 1.5em;
+            text-transform: uppercase;
+            font-size: 1.3em;
             padding: 1em;
             color: $header-text;
         }
@@ -45,14 +46,72 @@ header {
 
 main {
     text-align: center;
+    h2 {
+        margin: 2em 0 1.5em 0;
+    }
     section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
         article {
-            width: 15%;
+            width: 14.5%;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px lightgrey;
+            margin: 0.5em 0;
+            img {
+                width: 100%;
+            }
+            p {
+                color: rgba(0, 0, 0, 0.8);
+            }
         }
 
+    }
+}
+
+footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 13em;
+    padding-top: 3em;
+    margin-top: 3em;
+    background-color: #0f3e57;
+    article {
+        h3 {
+            color: $header-text;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+            li {
+                color: $transparent;
+                i {
+                    margin-right: 1em;
+                }
+                a {
+                    color: $transparent;
+                }
+            }
+        }
+        input {
+            border: none;
+            border-radius: 5px;
+            padding: 0.5em;
+        }
+        .btn {
+            background-color: #0f3e57;
+            color: $transparent;
+            border: 1px solid $transparent;
+            margin-bottom: 0.15em;
+        }
+        .btn:hover {
+            color: #0f3e57;
+            background-color: $transparent;
+        }
     }
 }
