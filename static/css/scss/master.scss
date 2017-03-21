@@ -1,0 +1,58 @@
+@import "base";
+
+header {
+    color: $header-text;
+    background-color: #281400;
+    text-align: center;
+    height: 50em;
+    ul.nav:nth-child(1) {
+        margin-left: 28em;
+        a {
+            font-size: 1.3em;
+            color: $transparent;
+            font-weight: normal;
+        }
+    }
+
+    ul.nav:nth-child(2) {
+        margin-top: 1.5em;
+        margin-right: 2em;
+        color: $transparent;
+    }
+    h1 {
+        margin: 5em auto 0.5em auto;
+        text-transform: uppercase;
+        width: 10em;
+        span {
+            text-transform: capitalize;
+        }
+    }
+    button {
+        margin-left: 3em;
+        background-color: $brown-color;
+        a {
+            font-size: 1.5em;
+            padding: 1em;
+            color: $header-text;
+        }
+    }
+    span.glyphicon:nth-child(4) {
+        margin-top: 19em;
+        margin-right: 2em;
+        color: $transparent;
+    }
+}
+
+main {
+    text-align: center;
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        article {
+            width: 15%;
+        }
+
+    }
+}
