@@ -175,6 +175,11 @@ td input {
     width: 5em;
 }
 
+form {
+    width: 50%;
+    margin:2em auto auto auto;
+}
+
 @media screen and (max-width: 640px) {
     header {
         h1 {

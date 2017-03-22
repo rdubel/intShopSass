@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="widtd=device-widtd,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop Sass</title>
+    <link rel="stylesheet" href="./static/external/bootstrap/dist/css/bootstrap.css">
+    <script src="./static/external/jquery/dist/jquery.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./static/external/font-awesome/css/font-awesome.css">
+    <link rel=stylesheet href=./static/css/master.css>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav">
+                    <li><a href="">Catalog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>sundays<br><br>
+            <span>We craft ocean friendly apparel</span>
+        </h1>
+        <a href="#" class="btn">browse our products</a>
+        <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <form data-toggle="validator" role="form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" data-minlength="6" maxlength="15" class="form-control" id="nom" placeholder="Doe" data-toggle="tooltip" title="Tappez votre nom" required>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" data-minlength="6" maxlength="15" class="form-control" id="prenom" placeholder="John" data-toggle="tooltip" title="Tappez votre prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="sel1" class="control-label">Sujet</label>
+                        <select class="form-control" id="sel1">
+                            <option>Payment bug</option>
+                            <option>Want us to fill our stock ?</option>
+                            <option>In need of any information ?</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="control-label"></label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="eMail">Email address</label>
+                    <input type="email" class="form-control" id="eMail" placeholder="Email" data-toggle="tooltip" title="Enter your Email address here." required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button class="btn btn-danger" type="reset">Reset</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <article>
+            <h3>Quick links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </article>
+        <article>
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i> @californiatdeme</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> support@smallvictories.co</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> +1 917 (123) 4567</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Newsletter</h3>
+            <form action="post">
+                <input type="email" placeholder="Your email...">
+                <button type="button" class="btn">OK</button>
+            </form>
+        </article>
+        <article>
+            <h3>Follow us</h3>
+            <ul>
+                <li><i class="fa fa-pinterest-square" aria-hidden="true"></i> Pinterest</li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</li>
+                <li><i class="fa fa-vimeo-square" aria-hidden="true"></i> Vimeo</li>
+            </ul>
+        </article>
+    </footer>
+    <script src="./static/external/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+    <script src="./static/js/script.js" charset=utf-8></script>
+</body>
+</html>
