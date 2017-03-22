@@ -13,7 +13,8 @@ header {
     nav {
         text-align: center;
     }
-    ul.nav:nth-child(1) {
+    ul.nav:nth-child(2) {
+        margin-left: 15em;
         a {
             font-size: 1.3em;
             color: $transparent;
@@ -23,7 +24,7 @@ header {
 
     ul.nav:nth-child(3) {
         margin-top: 1em;
-        margin-right: 1.3em;
+        margin-left: 10em;
         color: $transparent;
         font-size: 1.5em;
     }
@@ -47,7 +48,7 @@ header {
     span.glyphicon:nth-child(4) {
         font-size: 1.5em;
         margin-top: 10em;
-        margin-left: 16em;
+        margin-left: 40em;
         color: $transparent;
     }
 }
@@ -150,9 +151,8 @@ footer {
         div#navcol {
             margin-left: 4em;
         }
-        div ul.nav:nth-child(1) {
-            text-align: center;
-            width: auto;
+         ul.nav:nth-child(2) {
+            margin: 0;
         }
         span.glyphicon:nth-child(4) {
             margin-left: 10em;
