@@ -163,6 +163,10 @@ footer article .btn:hover {
   border-radius: 5px;
 }
 
+td input {
+  width: 5em;
+}
+
 @media screen and (max-width: 640px) {
   header h1 {
     width: 100%;
