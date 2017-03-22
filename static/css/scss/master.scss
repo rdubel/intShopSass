@@ -54,19 +54,20 @@ header {
 }
 
 main {
+    padding: 1em;
     text-align: center;
     h2 {
         margin: 2em 0 1.5em 0;
         font-family: serif;
     }
-    section {
+    section:not(#product) {
         width: 70%;
         margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        article {
+        article:not(#desc) {
             width: 14.5%;
             text-align: left;
             border-radius: 5px;
@@ -140,6 +141,33 @@ footer {
             color: #0f3e57;
             background-color: $transparent;
         }
+    }
+}
+
+#product {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    background-color: #0f3e57;
+    border-radius: 5px;
+    article {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: $transparent;
+        padding-left: 3em;
+        border-left: 1px solid $transparent;
+        input {
+            color: #0f3e57;
+            border: 3px solid $transparent;
+            border-radius: 5px;
+        }
+
     }
 }
 
