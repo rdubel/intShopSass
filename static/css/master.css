@@ -1,6 +1,10 @@
 header {
   font-family: serif;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-color: #281400;
   text-align: center;
   height: 50em;
@@ -8,10 +12,7 @@ header {
 header nav {
   text-align: center;
 }
-header ul.nav:nth-child(2) {
-  margin-left: 51em;
-}
-header ul.nav:nth-child(2) a {
+header ul.nav:nth-child(1) a {
   font-size: 1.3em;
   color: rgba(255, 255, 255, 0.65);
   font-weight: normal;
@@ -31,7 +32,6 @@ header h1 span {
   text-transform: capitalize;
 }
 header .btn {
-  margin-left: 4.5em;
   background-color: #a28f61;
   text-transform: uppercase;
   font-size: 1em;
@@ -42,7 +42,7 @@ header .btn {
 header span.glyphicon:nth-child(4) {
   font-size: 1.5em;
   margin-top: 10em;
-  margin-right: 2em;
+  margin-left: 16em;
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -131,6 +131,46 @@ footer article .btn {
 footer article .btn:hover {
   color: #0f3e57;
   background-color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 640px) {
+  header h1 {
+    width: 100%;
+  }
+  header div#navcol {
+    margin-left: 4em;
+  }
+  header div ul.nav:nth-child(1) {
+    text-align: center;
+    width: auto;
+  }
+  header span.glyphicon:nth-child(4) {
+    margin-left: 10em;
+  }
+
+  main section {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  main section h2 {
+    text-align: center;
+  }
+  main section article {
+    width: auto;
+  }
+  main section img {
+    width: 70%;
+    max-height: 175px;
+    margin: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=master.css.map */
