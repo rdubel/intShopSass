@@ -84,7 +84,7 @@ main {
             .onSale {
                 color: rgb(221, 167, 8);
             }
-            .soldO {
+            .soldOut {
                 color: lightgrey;
             }
             img {
@@ -106,7 +106,7 @@ footer {
     height: 13em;
     padding-top: 3em;
     margin-top: 3em;
-    background-color: #0f3e57;
+    background-color: $footer-color;
     article {
         h3 {
             color: $header-text;
@@ -132,13 +132,13 @@ footer {
             padding: 0.5em;
         }
         .btn {
-            background-color: #0f3e57;
+            background-color: $footer-color;
             color: $transparent;
             border: 1px solid $transparent;
             margin-bottom: 0.15em;
         }
         .btn:hover {
-            color: #0f3e57;
+            color: $footer-color;
             background-color: $transparent;
         }
     }
@@ -152,7 +152,7 @@ footer {
     width: 50%;
     margin: auto;
     padding: 1em;
-    background-color: #0f3e57;
+    background-color: $primary-prodcolor;
     border-radius: 5px;
     article {
         width: 45%;
@@ -163,7 +163,7 @@ footer {
         padding-left: 3em;
         border-left: 1px solid $transparent;
         input {
-            color: #0f3e57;
+            color: $primary-prodcolor;
             border: 3px solid $transparent;
             border-radius: 5px;
         }

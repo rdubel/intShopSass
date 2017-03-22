@@ -83,7 +83,7 @@ main section:not(#product) article:not(#desc) .buy {
 main section:not(#product) article:not(#desc) .onSale {
   color: #dda708;
 }
-main section:not(#product) article:not(#desc) .soldO {
+main section:not(#product) article:not(#desc) .soldOut {
   color: lightgrey;
 }
 main section:not(#product) article:not(#desc) img {
